@@ -1,9 +1,9 @@
 <script>
-    const hero=[{img:'img1.jpeg'},{img:'img2.jpeg'}]
+    import Hero from '../component/hero.svelte';
+    import text from '../img/img1.jpeg'
 </script>
 <div>
-    {#each hero as item}
-    <img src={`/src/img/${item.img}`} alt="">
-    {/each}
+    
+    <Hero hery={text} />
     
 </div>
